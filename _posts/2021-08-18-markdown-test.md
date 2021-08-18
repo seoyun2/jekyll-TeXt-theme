@@ -5,6 +5,7 @@ tags:
   - MathJax
   - Jekyll
   - LaTeX
+use_math: true
 ---
 
 likelihood를 최대화하는 파라미터를 $\mathbf{\theta}_{ML}$(ML: maximum likelihood)이라고 하면,
