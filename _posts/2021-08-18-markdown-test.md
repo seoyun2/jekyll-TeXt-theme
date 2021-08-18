@@ -25,4 +25,4 @@ $\mathbf{\theta}$와 관계없는 부분을 빼고 식을 정리하면 다음과
  
 <br>
 
-손실 함수를 최소화하는 관점에서, log likelihood를 최대화하는 대신 negative log likelihood $(-\log p(Y|\mathbf{\theta}, X))$를 최소화하는 식으로 나타내기도 합니다.
+손실 함수를 최소화하는 관점에서, log likelihood를 최대화하는 대신 negative log likelihood $(-\log p(Y\|\mathbf{\theta}, X))$를 최소화하는 식으로 나타내기도 합니다.
