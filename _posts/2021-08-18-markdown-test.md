@@ -8,19 +8,21 @@ tags:
 use_math: true
 ---
 
-$p(X=x|\mathbf{\theta})$
-
-
+likelihood를 최대화하는 파라미터를 $\mathbf{\theta}_{ML}$(ML: maximum likelihood)이라고 하면,
  
 <br>
 
 $$
 \begin{align}
-log_p(Y|\theta,X) &= log\prod_n p(y_n|\theta,~\mathbf{x}_n)\\
-&=\sum_n log p(y_n|\theta, \mathbf{x}_n)\\
-&=\sum_n log\bigg(\frac{1}{\sqrt{2\pi\sigma^2}}exp\bigg(-\frac{(y_n-\theta^\top\mathbf{x}_n)^2}{2\sigma^2}\bigg)\bigg)\\
-&=\sum_n log \frac{1}{\sqrt{2\pi\sigma^2}}+\sum_n log ~ exp \bigg(-\frac{(y_n-\theta^\top\mathbf{x}_n)^2}{2\sigma^2}\bigg)\\
-&=\sum_n log \frac{1}{\sqrt{2\pi\sigma^2}}+\sum_n\bigg(-\frac{(y_n-\theta^\top\mathbf{x}_n)^2}{2\sigma^2}\bigg)\\
-&=constant+\frac{1}{2\sigma^2}\sum_n(-(y_n-\theta^\top\mathbf{x})^2)
+\mathbf{\theta}_{ML}&=arg~\max_\mathbf{\theta}~log~p(Y|\theta, X)\\
+&=arg~\max_\mathbf{\theta}\bigg(\frac{1}{2\sigma^2}\sum_n(-(y_n-\theta^\top\mathbf{x}_n)^2)+constatnt\bigg)
 \end{align}
 $$
+ 
+<br>
+
+$\mathbf{\theta}$와 관계없는 부분을 빼고 식을 정리하면 다음과 같습니다.
+ 
+<br>
+
+손실 함수를 최소화하는 관점에서, log likelihood를 최대화하는 대신 negative log likelihood $(-\log p(Y|\mathbf{\theta}, X))$를 최소화하는 식으로 나타내기도 합니다.
