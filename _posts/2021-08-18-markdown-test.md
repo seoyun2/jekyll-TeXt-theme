@@ -13,10 +13,10 @@ likelihood를 최대화하는 파라미터를 $\mathbf{\theta}_{ML}$(ML: maximum
 <br>
 
 $$
-\begin{align}
+\begin{align*}
 \mathbf{\theta}_{ML}&=arg~\max_\mathbf{\theta}~log~p(Y|\theta, X)\\
 &=arg~\max_\mathbf{\theta}\bigg(\frac{1}{2\sigma^2}\sum_n(-(y_n-\theta^\top\mathbf{x}_n)^2)+constatnt\bigg)
-\end{align}
+\end{align*}
 $$
  
 <br>
